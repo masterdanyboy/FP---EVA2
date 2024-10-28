@@ -17,7 +17,7 @@ public class PRÁCTICA5 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Scanner scanner = new Scanner(System.in);
+         Scanner scanner = new Scanner(System.in);
         System.out.println("Introduce un número: ");
         int numero = scanner.nextInt();
         String accum = "";

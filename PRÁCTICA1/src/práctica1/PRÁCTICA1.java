@@ -17,19 +17,11 @@ public class PRÁCTICA1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        String cad;
-        int num;
-        
-        Scanner captu = new Scanner(System.in);
-        System.out.println("Ingrese la cadena de texto");
-        
-        cad = captu.nextLine();
-        System.out.println("Ingrese el número de veces que desea repetir");
-        
-        num=captu.nextInt();
-       
-        for(int i = 1; i <=num; i++){
-            System.out.println(""+cad);
+Scanner scanner = new Scanner(System.in);
+        System.out.println("Introduce una cadena de texto: ");
+        String input=scanner.nextLine();
+        for(int i=0;i<input.length();i++){
+            System.out.println(input);
     }
     
 }

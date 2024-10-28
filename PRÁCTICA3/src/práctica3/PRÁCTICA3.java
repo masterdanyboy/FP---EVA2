@@ -17,7 +17,7 @@ public class PRÁCTICA3 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-         Scanner scanner = new Scanner(System.in);
+ Scanner scanner = new Scanner(System.in);
         System.out.println("Introduce una cadena de texto:");
         String input = scanner.nextLine();
         String accum="";

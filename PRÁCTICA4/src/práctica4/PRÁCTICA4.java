@@ -17,20 +17,19 @@ public class PRÁCTICA4 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-         Scanner scanner = new Scanner(System.in);
-        System.out.println("Digita el numero");
+ Scanner scanner = new Scanner(System.in);
+        System.out.println("introduce tu texto");
+        String texto = scanner.nextLine();
+        String VocalesT="";
+        for(int i = 0; i < texto.length(); i++) {
 
-        int acum=1;
-        int num = scanner.nextInt();
-        for (int i = 1; i <= num; i++) {
+        if (texto.charAt(i) == 'a' || texto.charAt(i) == 'e' || texto.charAt(i) == 'i' || texto.charAt(i) == 'o' || texto.charAt(i) == 'u' || texto.charAt(i) == 'A' || texto.charAt(i) == 'E' || texto.charAt(i) == 'I' || texto.charAt(i) == 'O' || texto.charAt(i) == 'U') {
+            char letra = texto.charAt(i);
+            VocalesT += letra+" ";
+        }
 
-
-            acum = acum * i;
-
-
-
-            }
-        System.out.println("El factorial de " + num + " es: " + acum);
+        }
+        System.out.println(VocalesT);
     }
     
 }
