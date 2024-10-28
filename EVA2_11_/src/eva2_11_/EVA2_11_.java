@@ -17,20 +17,50 @@ public class EVA2_11_ {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int díaSem;
-        Scanner captu = new Scanner (System.in);
-        while(true){
-        System.out.println("Captura el número del día ()1 a 7: ");
-        díaSem = captu.nextInt();
-        captu.nextLine();
-        if (díaSem <= 1 && díaSem <= 70)
-            Break;
+         Scanner sc = new Scanner(System.in);
+        int dia = 0;
+        int diamax = 0;
+
+        while (true) {
+            System.out.println("ingresa en que día de la semana estás");
+            dia = sc.nextInt();
+
+            if(diamax < dia){
+                diamax = dia;
+            }
+
+            if (dia >= 1 && dia <= 7) {
+                break;
+            }
+
         }
-        
-        //ELEGIR ENTRE MÚLTIPLES ALTERNATIVAS
-        switch (díaSem){
+        switch (dia) {
             case 1:
+                System.out.println("Lunes");
+                break;
+            case 2:
+                System.out.println("Martes");
+                break;
+            case 3:
+                System.out.println("Miercoles");
+                break;
+            case 4:
+                System.out.println("Jueves");
+                break;
+            case 5:
+                System.out.println("Viernes");
+                break;
+            case 6:
+                System.out.println("Sabado");
+                break;
+            case 7:
+                System.out.println("Domingo");
+                break;
         }
+
+        System.out.println("El numero más alto que ingreso el usuario fue: "+diamax);
+    
+        
     }
     
 }

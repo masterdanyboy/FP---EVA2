@@ -17,16 +17,16 @@ public class EVA2_13_CONTAR {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Scanner captu = new Scanner (System.in);
-        
-        int masvocales = 0;
-        int i = 0;
-        String letras;
-        
-        System.out.print("Ingresa una cadena de texto: ");
-        letras = captu.nextLine();
-        
-        while (i < letras.length())
+ Scanner scanner = new Scanner(System.in);
+        System.out.println("Ingresa tu cadena: ");
+        String cadena = scanner.nextLine();
+        int count =0;
+        for(int i =0; i<cadena.length(); i++){
+            if(cadena.toLowerCase().charAt(i) == 'a' || cadena.toLowerCase().charAt(i) == 'e' || cadena.toLowerCase().charAt(i) == 'i' || cadena.toLowerCase().charAt(i) == 'o' || cadena.toLowerCase().charAt(i) == 'u'){
+                count++;
+            }
+        }
+        System.out.println("La cantidad de vocales en la cadena es: " + count);
         
         
         

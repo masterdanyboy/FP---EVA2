@@ -4,6 +4,8 @@
  */
 package eva_2_4_factorial;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Usuario
@@ -15,6 +17,20 @@ public class EVA_2_4_FACTORIAL {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Digita el numero");
+
+        int acum=1;
+        int num = scanner.nextInt();
+        for (int i = 1; i <= num; i++) {
+
+
+            acum = acum * i;
+
+
+
+            }
+        System.out.println("El factorial de " + num + " es: " + acum);
     }
     
 }
